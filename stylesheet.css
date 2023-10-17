@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Next", "Lucida Grande", sans-serif;
+    margin: 0;
+    padding-top: 1%;
+    /*Sama seperti hal 20 mengenai padding */
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 51
+    background-color: #b3aeb5;
+    /*Sama seperti hal 21 mengenai background warna */
+    background-repeat: no-repeat;
+    /*Sama seperti hal 21 mengenai background image */
+    background-position: center;
+    /*Sama seperti hal 21 mengenai background image */
+}
+
+img {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 10x;
+}
+
+.header {
+    background-color:  rgb(173, 156, 131);
+    color: #fff;
+    height: 90px;
+}
+
+.header-logo {
+    float: left;
+    padding: 20px 40px;
+}
+
+.header-list li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-list ul {
+    list-style: none;
+    font-size: 13px;
+    padding: 25px 30px;
+    display: flex;
+}
+
+.header-list li {
+    margin-right: 60px;
+}
+/* CSS for the dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.top-wrapper {
+    padding: 200px 0 200px 0;
+    background-image: url(https://i.pinimg.com/564x/1e/a8/12/1ea812f855e13f0b71eec75758ae2bcf.jpg);
+    /*Sama seperti hal 21 mengenai background image */
+    background-size: cover;
+    color: #ffffff;
+    /*Sama seperti hal 22 mengenai text */
+    letter-spacing: 0cm;
+    /*Sama seperti hal 22 mengenai text */
+    text-align: center;
+    /*Sama seperti hal 22 mengenai text */
+}
+
+.top-wrapper h1 {
+    opacity: 2.7;
+    font-size: 40px;
+    /*Sama seperti hal 23 mengenai font text */
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-decoration: blink;
+    /*Sama seperti hal 22 mengenai text */
+}
+
+.top-wrapper p {
+    opacity: 0.9;
+    margin-bottom: 3px;
+}
+
+.btn-wrapper {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup {
+    background-color: rgb(173, 156, 131);
+
+}
+
+.btn {
+    padding: 24 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 13px;
+}
+
+.top-wrapper h2 {
+    opacity: 1.7;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(173, 156, 131);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-right a:hover {
+    background-color: #020202;
+}
+
+.gaya-content {
+    max-width: 700px;
+    background-color: rgb(173, 156, 131);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #000;
+    font-family: "Avenir Next";
+    /*Sama seperti hal 23 mengenai font text */
+    display: inline-block;
+}
+
+.gaya-content h4 {
+    font-size: 13px;
+  }
+
+li {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+}
+
+h5 {
+    color: rgb(211 189 158);
+    font-size: 20px;
+    background-color: rgb(99, 80, 52);
+    padding: 10px 20px;
+}
+table {
+    text-align: center;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 90px;
+    margin: 0 90x;
+}
+/*Sama seperti hal 24 mengenai tabel*/
+
+td.kiri {
+    padding-top: 2cm;
+    padding-right: 2cm;
+    padding-bottom: 2cm;
+    padding-left: 2cm;
+    background-color: #020202;
+}
+/*Sama seperti hal 24 mengenai pengaturan padding*/
+
+TH {
+    color: #000;
+    background-color: #968950;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6b6030;
+    font-size: 9pt;
+}
+/*Sama seperti hal 24 mengenai percantik tabel */
+
+TD {
+    color: rgb(33 39 39);
+    background-color: #bdb696;
+    border-width: 1px;
+    border-style: solid;
+    border-color:  #6b6030;
+    font-size: 9pt;
+}
+
+TD {
+    color: rgb(33 39 39);#6b6030;
+}
+
+a:hover {
+    color: #ffffff;
+}
+/*Sama seperti hal 25 mengenai pembuatan tombol dengan tabel*/
+
+.leftlinks {
+    border:1px solid #22476C;
+    padding:5px;
+    margin:5px;
+    text-align:middle; 
+    background-color:#336699; 
+    width:150px;
+}
+.leftlinks a { 
+    display:block; 
+    margin:3px 0px;
+    border-top:1px solid #4C86C0; 
+    border-left:1px solid #4C86C0; 
+    border-right:1px solid #22476C; 
+    border-bottom:1px solid #22476C; 
+    padding: 4px 10px;
+    text-align:center;
+    background-color:#336699;
+    color:#EDEDED;
+    text-decoration:none;
+}
+.leftlinks a:link {
+    color:#EDEDED;
+}
+.leftlinks a:visited {
+    color:#EDEDED;
+}
+.leftlinks a:hover { display:block; margin:3px 0px;
+    border-top:1px solid #22476C; border-left:1px solid #22476C; border-bottom:1px solid #4C86C0; border-right:1px solid #4C86C0; padding: 5px 9px 3px 11px;
+    text-align:center; background-color:#336699; color:#EED929;
+    text-decoration:none;
+}
+/*Sama seperti hal 25-26 mengenai pembuatan tombol visual 3d*/
+
+footer {
+    background-color:  rgb(173, 156, 131);
+    color: #fff;
+    height: 60px;
+    padding: 20px;
+}

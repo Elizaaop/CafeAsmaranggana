@@ -1,93 +1,64 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
-body {
-    font-family: "Avenir Next", "Lucida Grande", sans-serif;
-    margin: 0;
-    padding-top: 1%;
-    /*Sama seperti hal 20 mengenai padding */
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-left: 51
-    background-color: #b3aeb5;
-    /*Sama seperti hal 21 mengenai background warna */
-    background-repeat: no-repeat;
-    /*Sama seperti hal 21 mengenai background image */
-    background-position: center;
-    /*Sama seperti hal 21 mengenai background image */
+#navbar {
+    background: rgb(173, 156, 131);
 }
 
 img {
     margin-bottom: 5px;
     margin-top: 5px;
-    margin-left: 2px;
     width: 55px;
     height: 55px;
     border-radius: 50%;
 }
 
-a {
-    text-decoration: none;
+#logo span {
+    color: rgb(73 70 67);
 }
 
-.clear {
-    clear: left;
+.navbar-toggler span {
+
 }
 
-li {
-    list-style: none;
+.navbar-nav {
+    margin-left: 20px;
 }
 
-.container {
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 10x;
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: #3b0e0e;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
 }
 
-.header {
-    background-color:  rgb(173, 156, 131);
-    color: #fff;
-    height: 90px;
+.nav-item .nav-link:hover {
+    background: #17161a;
+    color: white;
 }
 
-.header-logo {
-    float: left;
-    padding: 20px 40px;
-}
-
-.header-list li a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
-.header-list ul {
-    list-style: none;
-    font-size: 13px;
-    padding: 25px 30px;
-    display: flex;
-}
-
-.header-list li {
-    margin-right: 60px;
-}
-/* CSS for the dropdown menu */
-.dropdown {
-    position: relative;
+#navbar form button {
+    background: rgb(173, 156, 131);
+    color: white;
+    border: rgb(235 182 104);
 }
 
 .dropdown a {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: #3b0e0e;
     font-weight: bold;
+    background: rgb(173, 156, 131);
+    
 }
 
 .dropdown .dropdown-content {
@@ -95,19 +66,17 @@ li {
     position: absolute;
     background-color: burlywood;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
     border-radius: 5px;
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .dropdown-content a {
     padding: 10px;
     text-decoration: none;
+    
     color: #000;
     display: block;
 }
@@ -116,187 +85,525 @@ li {
     background-color: #f0f0f0;
 }
 
-
-.top-wrapper {
-    padding: 200px 0 200px 0;
-    background-image: url(https://i.pinimg.com/564x/1e/a8/12/1ea812f855e13f0b71eec75758ae2bcf.jpg);
-    /*Sama seperti hal 21 mengenai background image */
+/* Home Section Start */
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(./images/bg\ image.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
-    /*Sama seperti hal 22 mengenai text */
-    letter-spacing: 0cm;
-    /*Sama seperti hal 22 mengenai text */
+}
+
+.home .content {
+    background-image: url(https://i.pinimg.com/564x/1e/a8/12/1ea812f855e13f0b71eec75758ae2bcf.jpg);
     text-align: center;
-    /*Sama seperti hal 22 mengenai text */
+    padding-top: 150px;
 }
 
-.top-wrapper h1 {
-    opacity: 2.7;
-    font-size: 40px;
-    /*Sama seperti hal 23 mengenai font text */
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px rgb(173, 156, 131);
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: rgb(173, 156, 131);
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Salad";
+    }
+
+    10% {
+        content: "Ice Cream";
+    }
+
+    20% {
+        content: "Spagheti";
+    }
+
+    30% {
+        content: "Beef";
+    }
+
+    40% {
+        content: "Juice";
+    }
+
+    50% {
+        content: "Seafood";
+    }
+
+    60% {
+        content: "Meatball";
+    }
+
+    70% {
+        content: "Pancake";
+    }
+
+    80% {
+        content: "Dessert";
+    }
+
+    90% {
+        content: "Ayam";
+    }
+
+    100% {
+        content: "dan Menu lainnya";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-decoration: blink;
-    /*Sama seperti hal 22 mengenai text */
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
-.top-wrapper p {
-    opacity: 0.9;
-    margin-bottom: 3px;
+.home .content a:hover {
+    background: rgb(188 177 160)
+    color: white;
+}
+
+.home .logo {
+    width: 100px;
+    height: auto; 
+}
+
+.home h1, .home p {
+    color: white;
 }
 
 .btn-wrapper {
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup {
-    background-color: rgb(173, 156, 131);
-
+    text-align: center;
+    
 }
 
 .btn {
-    padding: 24 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 13px;
+    width: 100px;
+    height: 100px;
+    opacity: 80%;
 }
 
-.top-wrapper h2 {
-    opacity: 1.7;
+.btn-text {
     font-size: 10px;
-    letter-spacing: 1px;
+}
+
+.home {
+    background-position: 50%;
+}
+
+@media (max-width:450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1 {
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+/* Section Book Start */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/bg\ image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgb(173, 156, 131);
+    border-radius: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: rgb(173, 156, 131);
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Salad";
+    }
+
+    10% {
+        content: "Ice Cream";
+    }
+
+    20% {
+        content: "Spagheti";
+    }
+
+    30% {
+        content: "Beef";
+    }
+
+    40% {
+        content: "Juice";
+    }
+
+    50% {
+        content: "Seafood";
+    }
+
+    60% {
+        content: "Meatball";
+    }
+
+    70% {
+        content: "Pancake";
+    }
+
+    80% {
+        content: "Dessert";
+    }
+
+    90% {
+        content: "Ayam";
+    }
+
+    100% {
+        content: "dan Menu lainnya";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: palevioletred;
+    color: white;
+}
+
+@media (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1 {
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+.book {
+    background: #f9f9f9;
     padding: 20px;
 }
 
-header {
-    height: 65px;
-    width: 100%;
-    background-color: rgb(173, 156, 131);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-}
-
-.header-right a:hover {
-    background-color: #020202;
-}
-
-.gaya-content {
-    max-width: 700px;
-    background-color: rgb(173, 156, 131);
-    padding: 10px 20px;
-    border-radius: 12px;
-    color: #000;
-    font-family: "Avenir Next";
-    /*Sama seperti hal 23 mengenai font text */
-    display: inline-block;
-}
-
-.gaya-content h4 {
-    font-size: 13px;
-  }
-
-li {
-    text-align: left;
-}
-
-td {
+.main-text h1 {
     text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
 }
 
-h5 {
-    color: rgb(211 189 158);
+.main-text h1 span {
+    color: rgb(80 60 31)
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px #0a0909;
+    height: 200px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: palevioletred;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 span {
+    color: #312f30;
+}
+
+.packages .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+    border-radius: 5px;
+}
+
+.packages .card .card-body {
+    background: rgb(173, 156, 131);
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.packages .card .card-body p {
+    font-size: 15px;
+
+}
+
+.checked {
+    color: #a8b7a8;
+}
+
+.star i {
+    font-size: 15px;
+}
+
+.packages .card .card-body h6 {
     font-size: 20px;
-    background-color: rgb(99, 80, 52);
-    padding: 10px 20px;
 }
-table {
+
+.packages .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: #171314;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services {
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+.services .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card i {
+    font-size: 80px;
     text-align: center;
-    max-width: 1170px;
-    width: 100%;
-    padding: 0 90px;
-    margin: 0 90x;
-}
-/*Sama seperti hal 24 mengenai tabel*/
-
-td.kiri {
-    padding-top: 2cm;
-    padding-right: 2cm;
-    padding-bottom: 2cm;
-    padding-left: 2cm;
-    background-color: #020202;
-}
-/*Sama seperti hal 24 mengenai pengaturan padding*/
-
-TH {
-    color: #000;
-    background-color: #968950;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #6b6030;
-    font-size: 9pt;
-}
-/*Sama seperti hal 24 mengenai percantik tabel */
-
-TD {
-    color: rgb(33 39 39);
-    background-color: #bdb696;
-    border-width: 1px;
-    border-style: solid;
-    border-color:  #6b6030;
-    font-size: 9pt;
+    color: #010101;
+    margin-top: 20px;
 }
 
-TD {
-    color: rgb(33 39 39);#6b6030;
+.services .card .card-body h3 {
+    font-weight: 600;
 }
 
-a:hover {
-    color: #ffffff;
+.services .card .card-body {
+    text-align: center;
 }
-/*Sama seperti hal 25 mengenai pembuatan tombol dengan tabel*/
 
-.leftlinks {
-    border:1px solid #22476C;
-    padding:5px;
-    margin:5px;
-    text-align:middle; 
-    background-color:#336699; 
-    width:150px;
-}
-.leftlinks a { 
-    display:block; 
-    margin:3px 0px;
-    border-top:1px solid #4C86C0; 
-    border-left:1px solid #4C86C0; 
-    border-right:1px solid #22476C; 
-    border-bottom:1px solid #22476C; 
-    padding: 4px 10px;
-    text-align:center;
-    background-color:#336699;
-    color:#EDEDED;
-    text-decoration:none;
-}
-.leftlinks a:link {
-    color:#EDEDED;
-}
-.leftlinks a:visited {
-    color:#EDEDED;
-}
-.leftlinks a:hover { display:block; margin:3px 0px;
-    border-top:1px solid #22476C; border-left:1px solid #22476C; border-bottom:1px solid #4C86C0; border-right:1px solid #4C86C0; padding: 5px 9px 3px 11px;
-    text-align:center; background-color:#336699; color:#EED929;
-    text-decoration:none;
-}
-/*Sama seperti hal 25-26 mengenai pembuatan tombol visual 3d*/
+/* Section Services End */
 
+
+
+/* About Start */
+.about {
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+
+.about .card {
+    border-radius: 10px;
+}
+
+.about .card img {
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.about p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: palevioletred;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .about {
+        padding: 0;
+    }
+}
+
+/* About End */
+
+
+
+
+/* Footer */
 footer {
-    background-color:  rgb(173, 156, 131);
+    background-color: rgb(173, 156, 131);
     color: #fff;
-    height: 60px;
     padding: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+footer p {
+    background-color: rgb(173, 156, 131);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+footer .credit,
+footer .copyright {
+    background-color: rgb(173, 156, 131);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
